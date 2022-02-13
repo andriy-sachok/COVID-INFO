@@ -3,13 +3,36 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(145, 226, 219);
+    background-color: rgb(203, 230, 129);
     overflow: hidden;
 }
 
-.contries {
+.container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
     margin: 25px;
     width: 20%;
     height: 20%;
-    background-color: rgb(111, 175, 170);
+    background-color: rgb(230, 176, 76);
+}
+
+.containerTitle {
+
+}
+
+.dropdownContainer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.subContainer {
+    display: block;
+}
+
+.container:hover .dropdownContainer {
+    display: block;
 }
